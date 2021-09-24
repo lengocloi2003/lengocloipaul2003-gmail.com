@@ -3,7 +3,7 @@ import argparse
 
 def createParser ():
     parser = argparse.ArgumentParser()
-    parser.add_argument ('-n','--name',default= 'Мир')
+    parser.add_argument ('-n','--name')
 
     return parser
 
