@@ -5,18 +5,15 @@ def even_number(func):
         for x in A:
             if x % 2 == 0:
                 count+=1
-        if count>10:
-            func(True)
-        elif count == 0:
-            func(False)
-    return count_number
-@even_number
-def print_count(flag):
-    if flag == True:
-        print("Очень много")
-    else:
+        return count
+    if count_number()>10:
+        func()
+    elif count_number() == 0 :
         print('Нет')
-print_count()
+@even_number
+def print_count():
+    print("Очень много")
+
 
 
 
