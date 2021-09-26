@@ -1,4 +1,4 @@
-def decorator(func):
+def decorator_even_number(func):
     def wrapper(*args,**kwargs):
         val = func(*args,**kwargs)
         if val == 0 :
@@ -9,7 +9,7 @@ def decorator(func):
             return val
     return wrapper
 
-@decorator
+@decorator_even_number
 def count_even_number(A):
     count = 0
     for x in A:
@@ -19,6 +19,7 @@ def count_even_number(A):
 
 A = list(map(int,input().split()))
 print(count_even_number(A))
+
 
 
 
