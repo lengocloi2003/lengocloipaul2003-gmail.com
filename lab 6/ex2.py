@@ -116,7 +116,7 @@ print('enter three vectors :')
 a = input()
 b = input()
 c = input()
-print('area of parallelepiped : ', math.sqrt(Vector.parallelepiped(a,b,c)**2))
+print('area of parallelepiped : ', abs(Vector.parallelepiped(a,b,c)))
 
 """
 longest perimeter triangle, longest area triangle
